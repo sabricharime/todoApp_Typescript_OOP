@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --mainColor: purple;
+}
+
+html,
+body {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+#mainPage {
+  width: 100%;
+  padding: 3rem;
+  background-color: #ccc;
+}
+
+#mainForm {
+  background-color: white;
+  border-radius: 3px;
+  width: 400px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#mainForm > input {
+  border: none;
+  outline: none;
+  padding: 0.3rem 0;
+
+  border-bottom: 1px solid #ccc;
+}
+
+#mainForm > button {
+  outline: none;
+  background: var(--mainColor);
+  padding: 0.3rem 1rem;
+  border: none;
+  color: white;
+  border-radius: 0 3px 3px 0;
+  border-bottom: 1px solid purple;
+}
+
+.item{
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5rem 2rem;
+  margin-bottom: .5rem;
+}
+
+.item:nth-of-type(1){
+  margin-top: .5rem;
+}
+.edit, .deletebtn{
+  border: none;
+  outline: none;
+  padding: .3rem 1rem;
+  margin-right: .5rem;
+  cursor: pointer;
+  border-radius: 3px;
+
+  }
+
+  .edit{
+    background: #999;
+
+  }
+  .deletebtn{
+    background: #ff4444;
+    color: white;
+  }
